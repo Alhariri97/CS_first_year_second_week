@@ -118,6 +118,8 @@ public class CIS1056NWorksheet02IfConditions {
         int items = keyboard.nextInt();
         
         
+         
+        
         double commission = sales * 0.1;
         String message = "Commission " + commission;
         
