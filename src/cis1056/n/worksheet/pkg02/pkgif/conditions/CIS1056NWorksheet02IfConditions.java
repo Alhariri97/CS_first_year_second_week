@@ -30,7 +30,7 @@ public class CIS1056NWorksheet02IfConditions {
            //bankWithdrawal();
            
 //           7
-           //commission();
+           commission();
            
 //           8
            //temperatureConversion();
@@ -109,20 +109,23 @@ public class CIS1056NWorksheet02IfConditions {
         }
     }
     
+    
     //7
     public static void commission(){
         System.out.println(" Enter total sales!");
         int sales = keyboard.nextInt();
         System.out.println(" Enter items sold!");
         int items = keyboard.nextInt();
-        double added = 0;
-        double total = 0;
+        
+        
         double commission = sales * 0.1;
-        String message = "Commission "+commission;
+        String message = "Commission " + commission;
+        
         if (items > 50){
-            added = commission * 0.25;
-            total = commission + added;
-            message = "Commission: "+commission+"  \nBonus Commission: " + added +"\nTotal Commission: "+ total;
+            double added = commission * 0.25;
+            double  total = commission + added;
+            message = "Commission: "+commission+"  \nBonus Commission: "
+                    + added +"\nTotal Commission: "+ total;
         }
         System.out.println(message);
     }
